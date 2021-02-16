@@ -1,3 +1,5 @@
+# https://livebook.manning.com/book/grokking-algorithms/chapter-7/1
+
 @processed = []
 
 def cheapest(graph)
