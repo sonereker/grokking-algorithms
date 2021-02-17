@@ -10,11 +10,11 @@ def longest_common_subsequence_length(word_a, word_b)
         next
       end
 
-      if word_a[i] == word_b[j]
-        grid[i][j] = grid[i - 1][j - 1] + 1
-      else
-        grid[i][j] = [grid[i - 1][j], grid[i][j - 1]].max
-      end
+      grid[i][j] = if word_a[i] == word_b[j]
+                     grid[i - 1][j - 1] + 1
+                   else
+                     [grid[i - 1][j], grid[i][j - 1]].max
+                   end
     end
   end
 

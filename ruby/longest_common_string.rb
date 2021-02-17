@@ -5,15 +5,16 @@ def longest_common_string_length(word_a, word_b)
   for i in 0..word_a.length - 1
     grid[i] = []
     for j in 0..word_b.length - 1
-      if word_a[i] == word_b[j]
-        if i < 1 || j < 1
-          grid[i][j] = 1
-        else
-          grid[i][j] = grid[i - 1][j - 1] + 1
-        end
-      else
-        grid[i][j] = 0
+      if i < 1 || j < 1
+        grid[i][j] = 1
+        next
       end
+
+      grid[i][j] = if word_a[i] == word_b[j]
+                     grid[i - 1][j - 1] + 1
+                   else
+                     0
+                   end
     end
   end
 
