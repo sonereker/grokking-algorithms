@@ -2,9 +2,9 @@
 
 def longest_common_subsequence_length(word_a, word_b)
   grid = []
-  for i in 0..word_a.length - 1
+  (0..word_a.length - 1).each do |i|
     grid[i] = []
-    for j in 0..word_b.length - 1
+    (0..word_b.length - 1).each do |j|
       if i < 1 || j < 1
         grid[i][j] = 1
         next
