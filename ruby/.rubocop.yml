@@ -1,6 +1,9 @@
 AllCops:
   NewCops: enable
 
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
 Style/FrozenStringLiteralComment:
   Enabled: false
 

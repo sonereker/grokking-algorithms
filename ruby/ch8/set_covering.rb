@@ -1,5 +1,3 @@
-# https://livebook.manning.com/book/grokking-algorithms/chapter-8/1
-
 require 'set'
 
 def stations_covering_all_states(states_needed, stations)

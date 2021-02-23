@@ -1,5 +1,3 @@
-# https://livebook.manning.com/book/grokking-algorithms/chapter-9/1
-
 def longest_common_subsequence_length(word_a, word_b)
   grid = []
   (0..word_a.length - 1).each do |i|

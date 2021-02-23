@@ -1,5 +1,4 @@
-# https://livebook.manning.com/book/grokking-algorithms/chapter-4/
-
+# O(n log n)
 def quicksort(numbers)
   return numbers if numbers.size < 2
 
